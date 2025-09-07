@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Page, Theme } from './types';
 import Header from './components/Header';
@@ -74,8 +73,10 @@ const App: React.FC = () => {
     return (
         <div className="bg-[#FAFAFA] text-[#2E2E2E] dark:bg-gray-900 dark:text-gray-200">
             <Header currentPage={currentPage} onNavigate={handlePageChange} />
-            <main className={`transition-opacity duration-500 ${isExiting ? 'opacity-0' : 'opacity-100'}`}>
-                {renderPage()}
+            <main>
+                <div key={currentPage} className={isExiting ? 'animate-fadeOut' : 'animate-fadeIn'}>
+                    {renderPage()}
+                </div>
             </main>
             <Footer />
             <ThemeToggle theme={theme} toggleTheme={toggleTheme} />

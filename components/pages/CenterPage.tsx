@@ -45,7 +45,7 @@ const CenterPage: React.FC = () => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     return (
-        <div className="animate-fadeIn">
+        <div>
             {/* Banner Section */}
             <section className="h-[50vh] bg-cover bg-center flex items-center justify-center text-white relative" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/fisio-center-clinic/1920/600')"}}>
                 <div className="text-center p-4">

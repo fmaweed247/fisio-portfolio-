@@ -49,7 +49,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     }, []);
 
     return (
-        <div className="animate-fadeIn">
+        <div>
             {/* Hero Section */}
             <section className="h-screen relative overflow-hidden flex items-center justify-center text-white">
                  <div 
