@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import type { Page } from '../../types';
 import AnimateOnScroll from '../AnimateOnScroll';
@@ -50,7 +49,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
     }, []);
 
     return (
-        <div className="fade-in">
+        <div className="animate-fadeIn">
             {/* Hero Section */}
             <section className="h-screen relative overflow-hidden flex items-center justify-center text-white">
                  <div 

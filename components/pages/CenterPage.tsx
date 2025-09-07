@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import AnimateOnScroll from '../AnimateOnScroll';
 
@@ -33,7 +32,7 @@ const teamMembers = [
 
 const ImageModal: React.FC<{ src: string, alt: string, onClose: () => void }> = ({ src, alt, onClose }) => {
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 fade-in" onClick={onClose}>
+        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 animate-fadeIn" onClick={onClose}>
             <div className="relative max-w-4xl max-h-[90vh] p-4" onClick={e => e.stopPropagation()}>
                 <img src={src} alt={alt} className="w-full h-full object-contain rounded-lg" />
                 <button onClick={onClose} className="absolute -top-2 -right-2 text-white bg-black/50 rounded-full w-8 h-8 flex items-center justify-center text-2xl">&times;</button>
@@ -46,7 +45,7 @@ const CenterPage: React.FC = () => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     return (
-        <div className="fade-in">
+        <div className="animate-fadeIn">
             {/* Banner Section */}
             <section className="h-[50vh] bg-cover bg-center flex items-center justify-center text-white relative" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/seed/fisio-center-clinic/1920/600')"}}>
                 <div className="text-center p-4">

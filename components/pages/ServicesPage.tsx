@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import AnimateOnScroll from '../AnimateOnScroll';
 
@@ -48,7 +47,7 @@ const ServiceDetail: React.FC<{name: string, description: string, duration: stri
 
 const ServicesPage: React.FC = () => {
     return (
-        <div className="fade-in pt-32 pb-20">
+        <div className="animate-fadeIn pt-32 pb-20">
             <section className="container mx-auto px-6 text-center">
                  <AnimateOnScroll>
                     <h1 className="text-5xl font-bold text-[#2E2E2E] dark:text-gray-100">Nuestros Servicios</h1>
